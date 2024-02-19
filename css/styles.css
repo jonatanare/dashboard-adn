@@ -1,0 +1,274 @@
+body {
+  color: #4b5563;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 90px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.menu-mobil {
+  padding: 32px;
+  width: 70% !important;
+}
+@media (min-width: 768px) {
+  .menu-mobil {
+    width: 350px !important;
+  }
+}
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  background-color: #F9FAFD;
+  padding-bottom: 48px;
+}
+.dashboard .main-content {
+  margin-top: 32px;
+  min-height: calc(100vh - 70px);
+}
+@media (min-width: 1024px) {
+  .dashboard .main-content {
+    padding: 0 30px 30px 30px;
+    margin-left: 260px;
+  }
+}
+.dashboard .main-content__wrapper-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  .dashboard .main-content__wrapper-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .dashboard .main-content__wrapper-cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.dashboard .main-content .card-info {
+  position: relative;
+  padding: 32px 16px;
+  border-radius: 16px;
+  border: 1px solid #ECEFF1;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* shadow-cards */
+  box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+}
+.dashboard .main-content .card-info__title {
+  font-size: 18px;
+  color: #374151;
+}
+.dashboard .main-content .card-info__percentaje {
+  font-size: 14px;
+}
+.dashboard .main-content .card-info__icon {
+  font-size: 48px;
+}
+.dashboard .main-content .card-info--gray::after {
+  content: "";
+  background: #4b5563;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.dashboard .main-content .card-info--blue::after {
+  content: "";
+  background: #93c5fd;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.dashboard .main-content .card-report {
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-top: 32px;
+  box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+}
+@media (min-width: 1024px) {
+  .dashboard .main-content .card-report canvas {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .dashboard .main-content .card-report {
+    margin-top: 64px;
+    height: 450px;
+  }
+}
+.dashboard .main-content__informations {
+  margin-top: 48px;
+}
+.dashboard .main-content__informations .card-more-info {
+  background-color: #FFFFFF;
+  box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  padding: 16px 12px;
+}
+.dashboard .main-content__informations .card-more-info__header {
+  border-bottom: 1px solid #4b5563;
+}
+.dashboard .main-content__informations .card-more-info__header p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.dashboard .main-content__informations .card-more-info__content {
+  margin-top: 12px;
+}
+.dashboard .main-content__informations .card-more-info__content .first-col {
+  border-bottom: 2px solid #9ca3af;
+}
+@media (min-width: 1024px) {
+  .dashboard .main-content__informations .card-more-info__content .first-col {
+    border-right: 2px solid #9ca3af;
+    border-bottom: none;
+  }
+}
+.dashboard .main-content__informations .card-more-info__content-lists .list-item {
+  font-size: 14px;
+}
+.dashboard .main-content__informations .card-more-info__content-lists .list-item::marker {
+  font-size: 18px;
+  color: #172554;
+}
+.dashboard .main-content__informations .card-more-info__content-lists .list-item:nth-child(odd)::marker {
+  color: #3b82f6;
+}
+.dashboard .main-content__informations .card-more-info__number {
+  font-size: 48px;
+  font-weight: 700;
+}
+.dashboard .main-content__informations .card-more-info__icon {
+  font-size: 32px;
+}
+.dashboard .main-content__informations .card-more-info__footer {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.leftside-menu {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 260px;
+  background-color: #313A46;
+  padding-bottom: 40px;
+  overflow: hidden scroll;
+}
+@media (min-width: 1024px) {
+  .leftside-menu {
+    display: block;
+  }
+}
+.leftside-menu__container {
+  margin-top: 120px;
+  padding-left: 30px;
+}
+.leftside-menu__container p {
+  margin-left: 12px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.leftside-menu__container .nav-link {
+  padding: 12px;
+  color: #FFFFFF;
+  border-radius: 24px;
+  font-weight: 500;
+}
+.leftside-menu__container .nav-link i {
+  font-size: 16px;
+}
+.leftside-menu__container .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-navbar {
+  background-color: #FFFFFF;
+  min-height: 70px;
+  position: sticky;
+  top: 0;
+  border-bottom: 0px;
+  z-index: 1000;
+  box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+}
+@media (min-width: 1024px) {
+  .custom-navbar {
+    margin-left: 260px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.custom-navbar .topbar-menu {
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.custom-navbar .wrapper-input {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .custom-navbar .wrapper-input__search {
+    width: 250px;
+  }
+}
+.custom-navbar .wrapper-input__icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.custom-navbar .icon-actions {
+  background-color: #ECEFF1;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 16px;
+}
+.custom-navbar .icon-actions--noti {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-navbar .icon-actions__icon {
+  font-size: 24px;
+}
+.custom-navbar .icon-actions__data {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-width: 100px;
+}/*# sourceMappingURL=styles.css.map */

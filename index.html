@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADN Tecnológico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <main class="dashboard">
+        <nav class="custom-navbar fixed-top">
+            <div class="topbar container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <h1 class="mb-0">Dashboard</h1>
+                        <p class="mb-0">¡Hola bienvenido <strong>Jonatan</strong>!</p>
+                    </div>
+                    <div class="wrapper-input d-none d-lg-block">
+                        <input type="search" name="search" id="search" class="form-control wrapper-input__search"
+                            placeholder="Buscar...">
+                        <button class="btn wrapper-input__icon p-0">
+                            <i class="bi bi-search "></i>
+                        </button>
+                    </div>
+                    <button class="btn pt-0 pb-0 border-0 d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+                    <ul class="topbar-menu d-none d-lg-flex align-items-center gap-3">
+                        <li class="dropdown">
+                            <a href="#" class="btn dropdown icon-actions icon-actions--noti" data-bs-toggle="dropdown"
+                                role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="bi bi-info-circle icon-actions__icon"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="btn d-flex align-items-center gap-2 icon-actions">
+                                <div class="icon-actions__icon">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+                                <div class="icon-actions__data">
+                                    <strong>Jonatan</strong>
+                                    <span>Admin</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start menu-mobil" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav leftside-menu__container-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-grid-fill"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            Organigramas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                            Puestos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-pencil-square"></i>
+                            Evaluaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-people-fill"></i>
+                            Planes de formación
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            Planes de carrera
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-patch-check-fill"></i>
+                            Seleción
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mt-4 leftside-menu__container-list">
+                    <p class="text-black">Configuración</p>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-person-fill"></i>
+                            Usuario
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <aside class="leftside-menu">
+            <nav class="navbar leftside-menu__navbar" aria-label="navbar">
+                <div class="leftside-menu__container">
+                    <ul class="navbar-nav leftside-menu__container-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-grid-fill"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                Organigramas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-suitcase-lg-fill"></i>
+                                Puestos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-pencil-square"></i>
+                                Evaluaciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-people-fill"></i>
+                                Planes de formación
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-mortarboard-fill"></i>
+                                Planes de carrera
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="bi bi-patch-check-fill"></i>
+                                Seleción
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav leftside-menu__container-list">
+                        <p class="text-white">Configuración</p>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-person-fill"></i>
+                                Usuario
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-box-arrow-right"></i>
+                                Cerrar sesión
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <section class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 main-content__wrapper-cards">
+                        <div class="card-info card-info--gray">
+                            <div class="">
+                                <h3 class="card-info__title">OnBoarding</h3>
+                                <span class="card-info__percentaje">16%</span>
+                            </div>
+                            <div>
+                                <h2 class="card-info__icon"><i class="bi bi-folder2-open"></i></h2>
+                            </div>
+                        </div>
+                        <div class="card-info card-info--blue">
+                            <div>
+                                <h3 class="card-info__title">Legajos Digitales</h3>
+                                <span class="card-info__percentaje">25%</span>
+                            </div>
+                            <div>
+                                <h2 class="card-info__icon">
+                                    <i class="bi bi-file-pdf"></i>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card-info card-info--gray">
+                            <div>
+                                <h3 class="card-info__title">Comunicaciones</h3>
+                                <span class="card-info__percentaje">18%</span>
+                            </div>
+                            <div>
+                                <h2 class="card-info__icon">
+                                    <i class="bi bi-people"></i>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card-info card-info--blue">
+                            <div>
+                                <h3 class="card-info__title">Planificación</h3>
+                                <span class="card-info__percentaje">30%</span>
+                            </div>
+                            <div>
+                                <h2 class="card-info__icon">
+                                    <i class="bi bi-stopwatch"></i>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-report">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main-content__informations">
+                    <div class="col-xl-5">
+                        <section class="card-more-info">
+                            <div class="card-more-info__header">
+                                <p>Formularios</p>
+                            </div>
+                            <div class="row card-more-info__content">
+                                <div class="col-lg-6 first-col">
+                                    <ul class="card-more-info__content-lists first">
+                                        <li class="list-item">Acuerdo de partes</li>
+                                        <li class="list-item">Cambio de domicilio</li>
+                                        <li class="list-item">Seguro de vida</li>
+                                        <li class="list-item">Registro entrada ropa y EPP</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="card-more-info__content-lists">
+                                        <li class="list-item">Pedido de búsqueda</li>
+                                        <li class="list-item">Pedido de incorporación</li>
+                                        <li class="list-item">Entrevista de salida</li>
+                                        <li class="list-item">Certificados de trabajo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-xl-7 mt-5 mt-xl-0">
+                        <div class="row">
+                            <div class="col-6 ">
+                                <section class="card-more-info">
+                                    <div class="card-more-info__header">
+                                        <p>Control de ausentismo</p>
+                                    </div>
+                                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                                        <strong class="card-more-info__number">2</strong>
+                                        <i class="bi bi-megaphone-fill card-more-info__icon"></i>
+                                    </div>
+                                    <p class="card-more-info__footer">Notificaciones</p>
+                                </section>
+                            </div>
+                            <div class="col-6">
+                                <section class="card-more-info">
+                                    <div class="card-more-info__header">
+                                        <p>Recibo de haberes</p>
+                                    </div>
+                                    <div class="mt-2 d-flex align-items-center justify-content-between">
+                                        <strong class="card-more-info__number">5</strong>
+                                        <i class="bi bi-pencil-fill card-more-info__icon"></i>
+                                    </div>
+                                    <p class="card-more-info__footer">Notificaciones</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/chart.js"></script>
+
+</body>
+
+</html>
